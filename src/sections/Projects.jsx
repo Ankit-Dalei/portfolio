@@ -9,21 +9,35 @@ import Project3 from '../assets/project-3.png'
 const projectsData = [
   {
     id: "01",
-    title: "Crypto Screener Application",
+    title: "3D learning Website",
     description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
     link: "https://github.com",
     image: Project1,  
   },
   {
     id: "02",
-    title: "Euphoria - Ecommerce (Apparels) Website Template",
+    title: "Learning Management System",
     description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book. When an unknown printer took a galley of type and scrambled it to specimen book.",
     link: "https://github.com",
     image: Project2,
   },
   {
     id: "03",
-    title: "Blog Website Template",
+    title: "DevToolsB",
+    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    link: "https://github.com",
+    image: Project3,
+  },
+  {
+    id: "04",
+    title: "DevToolsB",
+    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    link: "https://github.com",
+    image: Project3,
+  },
+  {
+    id: "05",
+    title: "DevToolsB",
     description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
     link: "https://github.com",
     image: Project3,
