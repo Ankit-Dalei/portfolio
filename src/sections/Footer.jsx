@@ -6,8 +6,9 @@ const Footer = () => {
       <div className="px-8 flex justify-between items-start">
         <Logo invert />
         <div>
-          <p className='font-display font-semibold text-white'>@2024 Personal</p>
-          <p className='font-display font-semibold text-white'>Made by Ankit Dalei</p>
+          {/* <p className='font-display font-semibold text-white'>@2024 Personal</p> */}
+          <p className='font-display font-semibold text-white'>ankitdalei123@gmail.com</p>
+          {/* <p className='font-display font-semibold text-white'>Made by Ankit Dalei</p> */}
         </div>
       </div>
     </div>
