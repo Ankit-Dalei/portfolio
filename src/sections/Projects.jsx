@@ -9,39 +9,39 @@ import Project3 from '../assets/project-3.png'
 const projectsData = [
   {
     id: "01",
-    title: "3D learning Website",
-    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    link: "https://github.com",
+    title: "DevToolsB",
+    description: "Contributed to the development of the backend using Node.js, Express.js, and MongoDB, improving development efficiency by 40%. Implemented over 27 RESTful APIs in the frontend using a service layer, integrating various technique to rendering tools for enhance data handling and improve use interaction across the application. Collaborated with a team of 2 developers to integrate frontend components with backend services, streamlining data flow and reducing integration time by 30%.",
+    link: "https://github.com/Ankit-Dalei/DevToolsB_frontend",
     image: Project1,  
   },
   {
     id: "02",
-    title: "Learning Management System",
-    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book. When an unknown printer took a galley of type and scrambled it to specimen book.",
-    link: "https://github.com",
+    title: "SmartLearning",
+    description: " Designed a responsive and interactive 3D learning platform using ReactJS, offering users an engaging and immersive educational experience. Utilized Tailwind CSS to build a sleek, modern, and mobile-friendly interface with fast loading times and smooth transitions between 3D elements. Built a robust back-end using MongoDB, Express.js, Node.js, and React.js (MERN stack) to handle user authentication, data management, and real-time content updates.",
+    link: "https://github.com/Ankit-Dalei/sml",
     image: Project2,
   },
   {
     id: "03",
-    title: "DevToolsB",
-    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    link: "https://github.com",
+    title: "Disha",
+    description: "A simple weather app that provides real-time weather updates based on your location or searched city. Built with JavaScript, HTML, and CSS, it fetches weather data from a public API and displays temperature, humidity, and other weather details.",
+    link: "https://github.com/Ankit-Dalei/Weather",
     image: Project3,
   },
-  {
-    id: "04",
-    title: "DevToolsB",
-    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    link: "https://github.com",
-    image: Project3,
-  },
-  {
-    id: "05",
-    title: "DevToolsB",
-    description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-    link: "https://github.com",
-    image: Project3,
-  }
+  // {
+  //   id: "04",
+  //   title: "DevToolsB",
+  //   description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+  //   link: "https://github.com",
+  //   image: Project3,
+  // },
+  // {
+  //   id: "05",
+  //   title: "DevToolsB",
+  //   description: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+  //   link: "https://github.com",
+  //   image: Project3,
+  // }
 ]
 
 const Projects = () => {

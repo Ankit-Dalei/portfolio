@@ -8,7 +8,7 @@ import SocialButton from '../components/SocialButton'
 const socialLinks = [
   {
     icon: TwitterIcon,
-    link: "https://twitter.com"
+    link: "https://www.linkedin.com/in/ankit-dalei-0aab70161/"
   },
   {
     icon: RedditIcon,
@@ -34,13 +34,13 @@ const Hero = () => {
             Hello I&apos;am <span className="font-extrabold">Ankit Dalei.</span>
           </h1>
           <h2 className="font-sora text-5xl leading-[56px] text-black">
-            <span className="font-extrabold">Frontend</span> Developer
+            <span className="font-extrabold">Full-stack</span> Developer
           </h2>
           <h2 className="font-sora text-5xl leading-[56px] text-black">
             Based In <span className="font-extrabold">India.</span>
           </h2>
           <p className="text-zinc-500 font-display py-4">
-            I&apos;m AnkitDalei Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            I&apos;m AnkitDalei a Full Stack Developer with expertise in JavaScript, Node.js, and the MERN stack, specializing in building scalable web applications and integrating sensor-based automation solutions.
           </p>
 
           <div className='flex gap-8 items-center'>
