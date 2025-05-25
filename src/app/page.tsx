@@ -35,7 +35,7 @@ export default function Home() {
                   </div>
                   <div className="relative w-full h-[30px]">
                     <div className="w-full h-[4px] top-2.5 bg-[#5C724A] absolute z-0"></div>
-                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.724em] z-10">
+                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.72em] z-10">
                       WELCOME TO MY PAGE
                     </div>
                   </div>
@@ -54,14 +54,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-1 w-full h-[35vh] flex justify-center items-center opacity-[88%] mix-blend-luminosity">
-            <img src="./images/profile.png" alt="" className="rounded-3xl"/>
-          </div>
-          <div className="hidden sm:block">
+          <div>
             <div className="mt-1 w-full h-[35vh] flex justify-center items-center opacity-[88%] mix-blend-luminosity">
               <img src="./images/profile.png" alt="" className="rounded-3xl"/>
             </div>
-            <div></div>
+            <div className="hidden sm:block">hghj</div>
           </div>
           <div className="bg-amber-600 mt-1 w-full h-[30vh]">
 
