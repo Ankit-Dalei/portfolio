@@ -1,5 +1,10 @@
-import { Jacques_Francois_Shadow , Italiana } from "next/font/google";
+import { Jacques_Francois_Shadow , Italiana, Italianno } from "next/font/google";
 import profileImage from '../../public/Images/profile.png'
+
+const italianno = Italianno({
+  subsets: ['latin'],
+  weight: '400', // Italianno only supports 400
+});
 
 const italiana = Italiana({
   subsets: ['latin'],
@@ -9,7 +14,8 @@ const italiana = Italiana({
 const jacques = Jacques_Francois_Shadow({
   subsets: ['latin'],
   weight: '400',
-})
+});
+
 export default function Home() {
   return (
     <>
@@ -26,7 +32,7 @@ export default function Home() {
           </div>
           <div className=" mt-1 w-full h-[16vh]">
             <div className="w-full flex flex-col items-center justify-center">
-              <div className="w-full h-[8px] bg-[#31362d]"></div>
+              <div className="w-full h-[8px] bg-[#5C724A]"></div>
               <div className="w-full h-[4px] bg-[#5C724A] mt-0.5"></div>
             </div>
             <div className="block sm:hidden">
@@ -36,7 +42,7 @@ export default function Home() {
                   </div>
                   <div className="relative w-full h-[30px]">
                     <div className="w-full h-[4px] top-2.5 bg-[#5C724A] absolute z-0"></div>
-                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.7em] z-10">
+                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.72em] z-10">
                       WELCOME TO MY PAGE
                     </div>
                   </div>
@@ -61,14 +67,36 @@ export default function Home() {
             </div>
             <div className="hidden sm:block">hghj</div>
           </div>
-          <div className="bg-amber-600 mt-1 w-full h-[30vh]">
-
+          <div className="mt-1 w-full h-[25vh] flex justify-between items-center">
+            <div className="w-[35%] h-full flex flex-col justify-between">
+              <div className="h-[80%] bg-gray-400"></div>
+              <div className="h-[13%] bg-[#5C724A]"></div>
+            </div>
+            <div className="w-[63%] h-full">
+              <div className="w-full h-[4px] bg-[#5C724A]"></div>
+              <div className={`${jacques.className} text-black`}>ABOUT ME</div>
+              <div className={`${italianno.className} instrument-serif-regular-italic text-[14px] indent-10 text-wrap text-black`}>From humble beginnings, I embarked on a path filled with curiosity and resilience. Each challenge I faced became a stepping stone, shaping my skills and sharpening my determination. I learned to trust the process—failing, learning, and growing with every step. The late nights, the sfough fxkgb vo ijgn fsldf hno funsmo h oludj ol hnozlu hfnu hnoluh nfgb uzhn foj gs uhjgfsou jhusjh nulhjg nosluh gnfosuh slh soh os uhofulh osu hoslu hsoul hgsou lhgsoul hsou ghosug hsoulghfi.</div>
+            </div>
           </div>
-          <div className="bg-amber-600 mt-1 w-full h-[10vh]">
-
+          <div className="mt-1 w-full h-[10vh]">
+            <div className="w-full h-[4px] bg-[#5C724A] mt-2"></div>
+            <div className="h-[95%] w-full mt-1 flex justify-around items-center">
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+              <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
+            </div>
           </div>
         </div>
-        <div></div>
+        <div className="h-[25vh] w-screen p-2 flex justify-between items-center">
+          <div className="bg-gray-300 w-[35%] h-full"></div>
+          <div className="w-[64%] h-full flex flex-col justify-between items-center">
+            <div className="w-full h-[25%] bg-gray-300"></div>
+            <div className="w-full h-[73%] bg-gray-300"></div>
+          </div>
+        </div>
         <div></div>
         <div></div>
         <div></div>
