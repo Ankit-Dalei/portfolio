@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="block sm:hidden mt-1 w-full h-[35vh] flex justify-center items-center opacity-[88%] mix-blend-luminosity">
+          <div className="mt-1 w-full h-[35vh] flex justify-center items-center opacity-[88%] mix-blend-luminosity">
             <img src="./images/profile.png" alt="" className="rounded-3xl"/>
           </div>
           <div className="hidden sm:block">
