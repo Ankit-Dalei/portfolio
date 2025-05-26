@@ -1,4 +1,6 @@
 import { Jacques_Francois_Shadow , Italiana, Italianno } from "next/font/google";
+import CardShuffle from "./suffelui/page";
+import Link from "next/link";
 
 const italianno = Italianno({
   subsets: ['latin'],
@@ -22,8 +24,8 @@ export default function Home() {
         <div className="h-auto w-screen p-2">
           <div className="w-full h-[8vh] flex justify-between items-center">
             <div className="w-[50px]">            
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="45" height="30">
-              <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="45" height="30">
+              <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
             </div>
             <div className={`${jacques.className} text-4xl text-black`}>
               Ankit Dalei
@@ -78,7 +80,9 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-1 w-full h-[10vh]">
-            <div className="w-full h-[4px] bg-[#5C724A] mt-2"></div>
+            <div className="w-full h-[4px] bg-[#5C724A]"></div>
+            <div className="w-full h-[8px] bg-[#5C724A] m-0.5"></div>
+
             <div className="h-[95%] w-full mt-1 flex justify-around items-center">
               <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
               <div className="h-[70%] w-[15%] bg-pink-800 rounded-3xl"></div>
@@ -96,10 +100,39 @@ export default function Home() {
             <div className="w-full h-[73%] bg-gray-300"></div>
           </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="h-[19vh] w-screen p-2 flex flex-col justify-center items-center">
+          <div className=" flex h-[80%] w-[100%] justify-between items-center">
+            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+          </div>
+          <div className="w-[100%] h-[10%] flex justify-end text-black font-serif ">
+            <Link href="/blog">See More</Link>
+          </div>
+        </div>
+        <div className="h-[19vh] w-screen p-2 flex flex-col justify-center items-center">
+          <div className=" flex h-[80%] w-[100%] justify-between items-center">
+            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+          </div>
+          <div className="w-[100%] h-[10%] flex justify-end text-black font-serif ">
+            <Link href="/project">See More</Link>
+          </div>
+        </div>
+        <div>
+          <CardShuffle/>
+        </div>
+        <div className="w-screen h-[2vh] flex justify-between items-center p-2">
+          <div className="w-[100%] flex justify-end text-black font-serif mb-6">
+            <Link href="/designs">See More</Link>
+          </div>
+        </div>
+        <div className="bg-gray-900 h-[5vh] w-screen p-2 flex justify-end items-center">
+          <div className="tracking-[0.2rem]">
+            <a href="ankitdalei123@gmail.com">
+              ankitdalei123@gmail.com
+            </a>
+          </div>
+        </div>
       </div>
       <div>
         <div></div>
