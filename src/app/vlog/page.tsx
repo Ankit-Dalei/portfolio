@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from 'react';
 
  // if using Next.js app router
-const blog = () => {
+const vlog = () => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleContent = () => {
@@ -38,4 +38,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default vlog
