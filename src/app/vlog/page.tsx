@@ -19,7 +19,7 @@ const Vlog = () => {
             </svg>
           </Link>
         </div>
-        <div className="h-auto p-2 w-screen flex flex-col justify-between items-center">
+        <div className="h-auto p-2 w-screen flex flex-col justify-between items-center sm:hidden">
           <div className="h-auto w-[90%] bg-gray-300 mt-5 flex flex-col justify-center p-4 rounded shadow">
             <div className="h-[20vh] w-[100%] bg-gray-400 mb-4 rounded"></div>
             <div className="text-xl font-semibold mb-2">Title</div>
@@ -33,6 +33,25 @@ const Vlog = () => {
               {expanded ? 'VIEW LESS--' : 'SEE MORE--'}
             </button>
           </div>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 gap-4 p-4 sm:w-screen sm:h-auto">
+          {Array.from({ length: 14 }).map((_, index) => (
+
+            <div className="h-auto w-[90%] bg-gray-300 mt-5 flex flex-col justify-center p-4 rounded shadow">
+              <div className="h-[20vh] w-[100%] bg-gray-400 mb-4 rounded"></div>
+              <div className="text-xl font-semibold mb-2">Title</div>
+              <div className={`instrument-serif-regular-italic text-[14px] tracking-[0.2rem] text-black w-[90%] transition-all duration-300 overflow-hidden ${expanded ? 'max-h-[50000vh]' : 'max-h-[500px]'}`}>
+                {/* Long text content here */}
+              </div>
+              <button
+                onClick={toggleContent}
+                className="mt-2 text-[14px] italic text-black underline flex justify-start w-[30%]"
+              >
+                {expanded ? 'VIEW LESS--' : 'SEE MORE--'}
+              </button>
+            </div>
+
+          ))}
         </div>
       </div>
     </>

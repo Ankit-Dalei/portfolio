@@ -146,7 +146,7 @@ export default function Home() {
             <div className="h-[95%] bg-gray-300 w-[48%]"></div>
           </div>
           <div className="w-[100%] h-[8%] flex justify-end text-black font-serif ">
-            <Link href="/project">See More</Link>
+            <Link href="/designs">See More</Link>
           </div>
         </div>
         <div className="w-screen h-[2vh] flex justify-between items-center p-2 sm:hidden">
