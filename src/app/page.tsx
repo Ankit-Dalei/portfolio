@@ -1,5 +1,4 @@
 import { Jacques_Francois_Shadow , Italiana, Italianno } from "next/font/google";
-import profileImage from '../../public/Images/profile.png'
 
 const italianno = Italianno({
   subsets: ['latin'],
