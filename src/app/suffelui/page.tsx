@@ -4,9 +4,9 @@
 import { useState } from 'react';
 
 const images = [
-  '/images/image1.png',
-  '/images/image2.png',
-  '/images/image3.png',
+  '/image1.png',
+  '/image2.png',
+  '/image3.png',
 ];
 
 export default function CardShuffle() {
