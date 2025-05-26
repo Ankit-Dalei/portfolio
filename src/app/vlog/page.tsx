@@ -35,7 +35,7 @@ const Vlog = () => {
           </div>
         </div>
         <div className="hidden sm:grid grid-cols-2 gap-4 p-4 sm:w-screen sm:h-auto">
-          {Array.from({ length: 14 }).map((_, index) => (
+          {Array.from({ length: 14 }).map(() => (
 
             <div className="h-auto w-[90%] bg-gray-300 mt-5 flex flex-col justify-center p-4 rounded shadow">
               <div className="h-[20vh] w-[100%] bg-gray-400 mb-4 rounded"></div>
