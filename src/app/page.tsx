@@ -43,7 +43,7 @@ export default function Home() {
                   </div>
                   <div className="relative w-full h-[30px]">
                     <div className="w-full h-[4px] top-2.5 bg-[#5C724A] absolute z-0"></div>
-                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.72em] z-10">
+                    <div className="w-full h-[4px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[18px] text-black tracking-[0.7em] z-10">
                       WELCOME TO MY PAGE
                     </div>
                   </div>
