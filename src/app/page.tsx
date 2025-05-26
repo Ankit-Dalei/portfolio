@@ -1,6 +1,7 @@
 import { Jacques_Francois_Shadow , Italiana, Italianno } from "next/font/google";
 import CardShuffle from "./suffelui/page";
 import Link from "next/link";
+import Image from 'next/image';
 
 const italianno = Italianno({
   subsets: ['latin'],
@@ -64,7 +65,14 @@ export default function Home() {
           </div>
           <div>
             <div className="mt-1 w-full h-[35vh] flex justify-center items-center opacity-[88%] mix-blend-luminosity">
-              <img src="./profile.png" alt="" className="rounded-3xl"/>
+              <div className="relative w-full h-[90%]">
+                <Image
+                src="/profile.png"
+                alt="profileImage"
+                fill
+                className="rounded-3xl object-cover"
+                />
+              </div>
             </div>
             <div className="hidden sm:block">hghj</div>
           </div>

@@ -2,6 +2,7 @@
 'use client'; // if using Next.js app router
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const images = [
   '/image1.png',
@@ -32,9 +33,10 @@ export default function CardShuffle() {
             boxShadow: i === 0 ? '0 10px 20px rgba(0,0,0,0.3)' : '0 5px 10px rgba(0,0,0,0.1)',
           }}
         >
-          <img
+          <Image
             src={images[imgIndex]}
             alt={`card-${imgIndex}`}
+            fill
             className="w-full h-full object-cover"
           />
         </div>
