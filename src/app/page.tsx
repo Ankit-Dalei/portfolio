@@ -1,7 +1,12 @@
-import { Jacques_Francois_Shadow , Italiana, Italianno } from "next/font/google";
+import { Jacques_Francois_Shadow , Italiana, Italianno, Fredericka_the_Great } from "next/font/google";
 import CardShuffle from "./suffelui/page";
 import Link from "next/link";
 import Image from 'next/image';
+
+const fredericka = Fredericka_the_Great({
+  subsets: ['latin'],
+  weight: '400', // Only one weight is available for this font
+})
 
 const italianno = Italianno({
   subsets: ['latin'],
@@ -21,7 +26,7 @@ const jacques = Jacques_Francois_Shadow({
 export default function Home() {
   return (
     <>
-      <div className="bg-[#ffffe4] h-auto w-auto">
+      <div className="bg-[#ffffe4] h-auto w-auto lg:hidden">
         <div className="h-auto w-screen p-2">
           <div className="w-full h-[8vh] flex justify-between items-center sm:h-[5vh] md:h-[5vh]">
             <div className="w-[50px]">            
@@ -162,12 +167,126 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="lg:h-auto lg:w-auto hidden lg:block">
+        <div className="lg:h-[100vh] lg:w-full lg:p-2">
+          <div className="lg:h-[8%] lg:w-full lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
+            <div className="lg:w-[50px] lg:flex lg:justify-end">            
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="45" height="50">
+              <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+            </div>
+            <div>
+              <div className={`${jacques.className} lg:text-4xl lg:text-black`}>
+                Ankit Dalei
+              </div>
+              <div className={`${jacques.className} lg:text-[12px] lg:tracking-[0.3rem] lg:text-black`}>
+                Build Your Own Idea
+              </div>
+            </div>
+          </div>
+          <div className="lg:h-[13%] lg:w-full  lg:mt-2">
+            <div>
+              <div className="lg:w-full lg:h-[3px] lg:bg-[#5C724A]"></div>
+            </div>
+            <div className={`${jacques.className} lg:text-[65px] tracking-[1.7rem] lg:text-black lg:flex lg:justify-center lg:items-center`}>
+              GENERATE YOUR TODAY
+            </div>
+            <div className="lg:flex lg:justify-end">
+              <div className="lg:w-[28.7%] lg:h-[2px] lg:bg-[#5C724A]"></div>
+            </div>
+          </div>
+          <div className=" lg:h-[77%] lg:w-full lg:mt-2 lg:flex lg:justify-between lg:items-center">
+            <div className="lg:h-[95%] lg:w-[25%] lg:flex lg:flex-col">
+              <div className="lg:h-[5%] lg:text-black lg:w-full">
+                <h1 className="lg:font-serif">My Story </h1>
+              </div>
+              <div className="lg:text-[14px] lg:tracking-[0.09rem] lg:w-full lg:h-[95%]">
+                <p className={`${italianno.className} lg:text-wrap lg:text-black`}>From humble beginnings, I embarked on a path filled with curiosity and resilience. Each challenge I faced became a stepping stone, shaping my skills and sharpening my determination. I learned to trust the process—failing, learning, and growing with every step. The late nights, the silent battles, and the unwavering desire to improve fueled my transformation. Along the way, I discovered my strengths, faced my fears, and embraced the unknown. I turned obstacles into opportunities and doubts into direction. Passion became my compass, and purpose, my destination. Today, I stand not as someone who had it easy, but as someone who refused to give up. My journey isn’t about perfection—it’s about progress. And while there’s still much ahead, I carry with me the lessons, scars, and triumphs that remind me how far I’ve come—and how far I’m ready to go.
+Every moment teste layer to my growth. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto ipsum fugit natus. Tempora neque ex dolore pariatur deserunt delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi inventore culpa libero. Aliquid officiis tempora voluptate laborum ea. Ea eos non sapiente obcaecati tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi totam in accusantium natus veritatis at. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla magni quae repellat culpa dolores, non sapiente sint cumque minima? Rerum suscipit quae, quibusdam autem itaque magnam eius accusamus laudantium expedita!lorem10
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, qui.lorem10 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, tempore!</p>
+              </div>
+            </div>
+            <div className="lg:h-[95%] lg:w-[30%] lg:flex lg:flex-col lg:justify-between lg:items-center">
+              <div className="lg:relative lg:opacity-[88%] lg:mix-blend-luminosity lg:h-[55%] lg:w-[95%]">
+                <Image
+                src="/profile.png"
+                alt="profileImage"
+                fill
+                className="rounded-3xl object-cover"
+                />
+              </div>
+              <div className="lg:text-[14px] lg:tracking-[0.09rem] lg:w-full lg:h-[42.6%]">
+                <p className={`${italianno.className} lg:text-wrap lg:text-black`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatibus! Quo laudantium amet, nisi velit reprehenderit saepe vel deserunt nihil quae fugiat maiores cumque vero, eum ipsum quia. Non deserunt veritatis repellendus et iusto earum dolorum, debitis atque ut culpa!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla libero aliquid quaerat culpa id molestiae aut quisquam quasi nesciunt temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium placeat vero asperiores at maxime dolore officia sint quidem sit dolorum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eos excepturi recusandae delectus quas consequatur corrupti consequuntur quam saepe fugit temporibus odit numquam, molestiae impedit rem, dolorem laborum debitis eligendi ipsam! Similique voluptatem, recusandae eaque officia nemo autem deserunt deleniti.
+                </p>
+              </div>
+            </div>
+            <div className="lg:h-[95%] lg:w-[44%] lg:flex lg:justify-between lg:items-center">
+              <div className="lg:h-[100%] lg:w-[7%] lg:flex lg:flex-col lg:justify-start  lg:items-start">
+                <h1 className={`${fredericka.className} lg:text-black lg:text-[39px] lg:flex lg:flex-col lg:items-center`}>
+                  {'noitanigamI'.split('').map((letter, i) => (
+                    <span key={i} className="lg:transform lg:-rotate-90 lg:leading-none">
+                      {letter}
+                    </span>
+                  ))}
+                </h1>
+              </div>
+              <div className="lg:h-full lg:w-[91%] lg:flex lg:flex-col lg:justify-between lg:items-center">
+                <div className="lg:w-full lg:h-[43%]">
+                  <div className="lg:grid lg:grid-cols-4 lg:grid-rows-3 lg:gap-1 lg:w-full lg:h-full">
+                    <div className={`${fredericka.className} lg:col-span-3 lg:row-span-1 lg:text-black lg:text-7xl tracking-[1.3rem]`}>Creativity</div>
+
+                    <div className={`${fredericka.className} lg:col-span-1 lg:row-span-2 lg:rotate-90 lg:leading-none lg:text-5xl lg:text-black`}>INDIA</div>
+
+                    <div className="lg:col-span-2 lg:row-span-2 lg:relative">
+                      <Image
+                        src="/Group.png"
+                        alt="profileImage"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <div className="lg:col-span-1 lg:row-span-1"></div>
+                    <div className="lg:col-span-1 lg:row-span-1"></div>
+
+                    <div className={`${fredericka.className} lg:col-span-1 lg:row-span-1 lg:text-black lg:text-[50px] lg:tracking-[0.7rem]`}>Idea</div>
+                  </div>
+                </div>
+                <div className="lg:w-full lg:h-[55%] lg:flex lg:justify-between lg:items-center">
+                  <div className="lg:h-full lg:w-[45%] lg:flex lg:flex-col lg:justify-between lg:items-center">
+                    <div className="bg-gray-300 lg:w-full lg:h-[42%] rounded-2xl"></div>
+                    <div className="bg-gray-300 lg:w-full lg:h-[42%] rounded-2xl"></div>
+                    <div className="lg:w-full lg:h-[10%] lg:flex lg:justify-end lg:items-center lg:text-black">
+                      <a href="">
+                        See More
+                      </a>
+                    </div>
+                  </div>
+                  <div className={`${fredericka.className} lg:text-black lg:text-4xl lg:flex lg:justify-center lg:h-full lg:w-[13%]`}>
+                    T<br/>R<br/>A<br/>V<br/>E<br/>L<br/>S
+                  </div>
+                  <div className="lg:h-full lg:w-[40%] lg:relative">
+                    <Image
+                        src="/travel.png"
+                        alt="profileImage"
+                        fill
+                        className="object-right"
+                      />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lg:h-[100vh] lg:w-full lg:p-2 bg-amber-500">
+
+        </div>
+        <div className="lg:h-[5vh] lg:w-full lg:p-2 bg-gray-800 lg:flex lg:justify-between lg:items-center lg:font-serif">
+          <div>Contact Via Email</div>
+          <div>
+            <a href="ankitdalei123@gmail.com">ankitdalei123@gmail.com</a>
+          </div>
+          <div>Copyright @ 2025</div>
+        </div>
       </div>
     </>
   );
