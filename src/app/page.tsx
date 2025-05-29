@@ -187,7 +187,7 @@ export default function Home() {
             <div>
               <div className="lg:w-full lg:h-[3px] lg:bg-[#5C724A]"></div>
             </div>
-            <div className={`${jacques.className} lg:text-[65px] tracking-[1.7rem] lg:text-black lg:flex lg:justify-center lg:items-center`}>
+            <div className={`${jacques.className} lg:text-[50px] tracking-[1.7rem] lg:text-black lg:flex lg:justify-center lg:items-center`}>
               GENERATE YOUR TODAY
             </div>
             <div className="lg:flex lg:justify-end">
