@@ -167,7 +167,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:h-auto lg:w-auto hidden lg:block">
+      <div className="lg:h-auto lg:w-auto hidden lg:block xl:hidden">
         <div className="lg:h-[100vh] lg:w-[100%] lg:p-2">
           <div className="lg:h-[8%] lg:w-full lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
             <div className="lg:w-[50px] lg:flex lg:justify-end">            
