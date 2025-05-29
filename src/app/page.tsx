@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </div>
       <div className="lg:h-auto lg:w-auto hidden lg:block">
-        <div className="lg:h-[100vh] lg:w-full lg:p-2">
+        <div className="lg:h-[100vh] lg:w-[100%] lg:p-2">
           <div className="lg:h-[8%] lg:w-full lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
             <div className="lg:w-[50px] lg:flex lg:justify-end">            
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="45" height="50">
@@ -187,7 +187,7 @@ export default function Home() {
             <div>
               <div className="lg:w-full lg:h-[3px] lg:bg-[#5C724A]"></div>
             </div>
-            <div className={`${jacques.className} lg:text-[50px] tracking-[1.7rem] lg:text-black lg:flex lg:justify-center lg:items-center`}>
+            <div className={`${jacques.className} lg:text-[60px] tracking-[1.7rem] lg:text-black lg:flex lg:justify-center lg:items-center`}>
               GENERATE YOUR TODAY
             </div>
             <div className="lg:flex lg:justify-end">
