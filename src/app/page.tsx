@@ -413,7 +413,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:h-auto lg:w-auto hidden lg:block">
+      <div className="lg:h-auto lg:w-auto hidden lg:block md:overflow-hidden">
         <div className="lg:h-[100vh] lg:w-[100%] lg:p-2">
           <div className="lg:h-[9%] lg:w-full lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
             <div className="lg:w-[50px] lg:flex lg:justify-end">            
@@ -587,10 +587,28 @@ export default function Home() {
                 </div>
                 <div className="lg:w-full lg:h-[55%] lg:flex lg:justify-between lg:items-center">
                   <div className="lg:h-full lg:w-[45%] lg:flex lg:flex-col lg:justify-between lg:items-center xl:items-start xl:w-[42%]">
-                    <div className="bg-gray-300 lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%]"></div>
-                    <div className="bg-gray-300 lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%]"></div>
+                    <div className="lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%] relative">
+                      <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                        <Image
+                        src="/proimg.png"
+                        alt="profileImage"
+                        fill
+                        className="rounded-xl object-cover"
+                        />
+                      </Link>
+                    </div>
+                    <div className="lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%] relative">
+                      <Link href={`https://portfolio-nu-bice-89.vercel.app/`} target="_blank">
+                        <Image
+                        src="/proimg2.png"
+                        alt="profileImage"
+                        fill
+                        className="rounded-xl object-cover"
+                        />
+                      </Link>
+                    </div>
                     <div className="lg:w-full lg:h-[10%] lg:flex lg:justify-end lg:items-center lg:text-black xl:w-[90%]">
-                      <a href="">
+                      <a href="vlog">
                         See More
                       </a>
                     </div>
