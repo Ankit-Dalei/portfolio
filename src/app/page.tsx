@@ -324,7 +324,7 @@ export default function Home() {
         <div className="h-auto w-screen p-2 flex flex-col justify-center items-center mt-2">
           <h2 className="text-black text-2xl font-serif">Vlogs</h2>
           <div className=" flex h-auto w-[100%] flex-col justify-between items-center mt-3">
-            <div className="h-[170px] w-[100%] relative sm:h-[350px]">
+            <div className="h-[170px] w-[100%] relative sm:h-[350px] md:h-[420px]">
               <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
                 <Image
                 src="/proimg.png"
@@ -334,7 +334,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px]">
+            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px] md:h-[420px]">
               <Link href={`https://portfolio-nu-bice-89.vercel.app/`} target="_blank">
                 <Image
                 src="/proimg2.png"
@@ -352,7 +352,7 @@ export default function Home() {
         <div className="h-auto w-screen p-2 flex flex-col justify-center items-center mt-1">
           <h2 className="text-black text-2xl font-serif">Projects</h2>
           <div className=" flex h-auto w-[100%] flex-col justify-between items-center mt-3">
-            <div className="h-[170px] w-[100%] relative sm:h-[350px]">
+            <div className="h-[170px] w-[100%] relative sm:h-[350px] md:h-[420px]">
               <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
                 <Image
                 src="/proimg.png"
@@ -362,7 +362,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px]">
+            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px] md:h-[420px]">
               <Link href={`https://portfolio-nu-bice-89.vercel.app/`} target="_blank">
                 <Image
                 src="/proimg2.png"
@@ -377,10 +377,10 @@ export default function Home() {
             <Link href="/project">See More</Link>
           </div>
         </div>
-        <div className="hidden sm:h-[55vh] sm:w-screen sm:p-2 sm:flex sm:flex-col sm:justify-center sm:items-center mt-1">
+        <div className="hidden sm:h-auto sm:w-screen sm:p-2 sm:flex sm:flex-col sm:justify-center sm:items-center mt-1">
           <h2 className="text-black text-2xl font-serif">Designs</h2>
-          <div className=" flex h-[92%] w-[100%] justify-between items-center mt-3">
-            <div className="h-[95%] w-[48%] relative">
+          <div className=" flex h-auto w-[100%] justify-between items-center mt-3">
+            <div className="h-[580px] w-[48%] relative">
               <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
                 <Image
                 src="/designimg.png"
@@ -390,7 +390,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="h-[95%] w-[48%] relative">
+            <div className="h-[580px] w-[48%] relative">
               <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
                 <Image
                 src="/designimg.png"
