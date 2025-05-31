@@ -1,5 +1,4 @@
 import { Jacques_Francois_Shadow , Italiana, Italianno, Fredericka_the_Great } from "next/font/google";
-import CardShuffle from "./suffelui/page";
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -167,7 +166,7 @@ export default function Home() {
                       WELCOME TO MY PAGE
                     </div>
                   </div>
-                  <div className="text-5xl">
+                  <div className="text-5xl flex justify-end">
                     YOUR TODAY
                   </div>
               </div>
@@ -307,16 +306,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[25vh] w-screen p-2 justify-between items-center sm:h-[35vh] hidden sm:flex">
-          <div className="bg-gray-300 w-[35%] h-full sm:w-[30%]"></div>
-          <div className="w-[64%] h-full flex flex-col justify-between items-center sm:w-[68%]">
-            <div className="w-full h-[25%] bg-gray-300 sm:h-[20%]"></div>
-            <div className="w-full h-[73%] bg-gray-300 sm:h-[78%]"></div>
-          </div>
-        </div>
-        <div className="h-auto mt-1 w-screen p-2 flex flex-col justify-between items-center sm:h-[35vh] sm:hidden">
+        <div className="h-auto mt-1 w-screen p-2 flex flex-col justify-between items-center">
           <h2 className="text-black text-2xl font-serif">Skills</h2>
-          <div className="h-[75%] w-full mt-1 grid grid-cols-6 gap-4 justify-items-center items-center sm:hidden">
+          <div className="h-auto w-full mt-1 grid grid-cols-6 gap-4 justify-items-center items-center">
             {socialLinks.map((item) => (
               <div
                 key={item.id}
@@ -329,38 +321,87 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="h-[19vh] w-screen p-2 flex flex-col justify-center items-center sm:h-[25vh]">
-          <div className=" flex h-[80%] w-[100%] justify-between items-center">
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+        <div className="h-auto w-screen p-2 flex flex-col justify-center items-center mt-2">
+          <h2 className="text-black text-2xl font-serif">Vlogs</h2>
+          <div className=" flex h-auto w-[100%] flex-col justify-between items-center mt-3">
+            <div className="h-[170px] w-[100%] relative sm:h-[350px]">
+              <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                <Image
+                src="/proimg.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
+            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px]">
+              <Link href={`https://portfolio-nu-bice-89.vercel.app/`} target="_blank">
+                <Image
+                src="/proimg2.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
           </div>
-          <div className="w-[100%] h-[10%] flex justify-end text-black font-serif ">
+          <div className="w-[100%] h-[25px] flex justify-end items-center text-black font-serif mt-1">
             <Link href="/vlog">See More</Link>
           </div>
         </div>
-        <div className="h-[19vh] w-screen p-2 flex flex-col justify-center items-center sm:h-[25vh]">
-          <div className=" flex h-[80%] w-[100%] justify-between items-center">
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+        <div className="h-auto w-screen p-2 flex flex-col justify-center items-center mt-1">
+          <h2 className="text-black text-2xl font-serif">Projects</h2>
+          <div className=" flex h-auto w-[100%] flex-col justify-between items-center mt-3">
+            <div className="h-[170px] w-[100%] relative sm:h-[350px]">
+              <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                <Image
+                src="/proimg.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
+            <div className="h-[170px] w-[100%] relative mt-2 sm:h-[350px]">
+              <Link href={`https://portfolio-nu-bice-89.vercel.app/`} target="_blank">
+                <Image
+                src="/proimg2.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
           </div>
-          <div className="w-[100%] h-[10%] flex justify-end text-black font-serif ">
+          <div className="w-[100%] h-[25px] flex justify-end items-center text-black font-serif mt-1">
             <Link href="/project">See More</Link>
           </div>
         </div>
-        <div className="hidden">
-          <CardShuffle/>
-        </div>
-        <div className="hidden sm:h-[55vh] sm:w-screen sm:p-2 sm:flex sm:flex-col sm:justify-center sm:items-center">
-          <div className=" flex h-[92%] w-[100%] justify-between items-center">
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
-            <div className="h-[95%] bg-gray-300 w-[48%]"></div>
+        <div className="hidden sm:h-[55vh] sm:w-screen sm:p-2 sm:flex sm:flex-col sm:justify-center sm:items-center mt-1">
+          <h2 className="text-black text-2xl font-serif">Designs</h2>
+          <div className=" flex h-[92%] w-[100%] justify-between items-center mt-3">
+            <div className="h-[95%] w-[48%] relative">
+              <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                <Image
+                src="/designimg.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
+            <div className="h-[95%] w-[48%] relative">
+              <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                <Image
+                src="/designimg.png"
+                alt="profileImage"
+                fill
+                className="rounded-xl object-cover"
+                />
+              </Link>
+            </div>
           </div>
           <div className="w-[100%] h-[8%] flex justify-end text-black font-serif ">
-            <Link href="/designs">See More</Link>
-          </div>
-        </div>
-        <div className="w-screen h-[2vh] flex justify-between items-center p-2 sm:hidden">
-          <div className="w-[100%] flex justify-end text-black font-serif mb-6">
             <Link href="/designs">See More</Link>
           </div>
         </div>
