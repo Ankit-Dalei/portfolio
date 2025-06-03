@@ -407,9 +407,9 @@ export default function Home() {
         </div>
         <div className="bg-gray-900 h-[5vh] w-screen p-2 flex justify-end items-center">
           <div className="tracking-[0.2rem]">
-            <a href="ankitdalei123@gmail.com">
+            <Link href="ankitdalei123@gmail.com">
               ankitdalei123@gmail.com
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -588,29 +588,29 @@ export default function Home() {
                 <div className="lg:w-full lg:h-[55%] lg:flex lg:justify-between lg:items-center">
                   <div className="lg:h-full lg:w-[45%] lg:flex lg:flex-col lg:justify-between lg:items-center xl:items-start xl:w-[42%]">
                     <div className="lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%] relative">
-                      <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank">
+                      {/* <Link href={`https://weather-ten-sigma-87.vercel.app/`} target="_blank"> */}
                         <Image
-                        src="/proimg.png"
+                        src="/vlogImg.png"
                         alt="profileImage"
                         fill
-                        className="rounded-xl object-cover"
+                        className="rounded-xl"
                         />
-                      </Link>
+                      {/* </Link> */}
                     </div>
                     <div className="lg:w-full lg:h-[42%] rounded-2xl xl:w-[90%] relative">
-                      <Link href={`https://med-guide-gilt.vercel.app/`} target="_blank">
+                      {/* <Link href={`https://med-guide-gilt.vercel.app/`} target="_blank"> */}
                         <Image
-                        src="/proimg2.png"
+                        src="/vlogImg2.png"
                         alt="profileImage"
                         fill
-                        className="rounded-xl object-cover"
+                        className="rounded-xl"
                         />
-                      </Link>
+                      {/* </Link> */}
                     </div>
                     <div className="lg:w-full lg:h-[10%] lg:flex lg:justify-end lg:items-center lg:text-black xl:w-[90%]">
-                      <a href="vlog">
+                      <Link href="vlog">
                         See More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className={`${fredericka.className} lg:text-black lg:text-4xl lg:flex lg:justify-center lg:h-full lg:w-[13%] xl:w-[15%] xl:flex xl:justify-center`}>
@@ -745,7 +745,7 @@ export default function Home() {
                   </Link>
               </div>
               <div className="lg:w-full lg:flex lg:justify-end lg:items-center lg:text-black lg:text-xl lg:font-serif">
-                <Link href={`vlog`}>
+                <Link href={`designs`}>
                   See More
                 </Link>
               </div>
@@ -804,7 +804,7 @@ export default function Home() {
         <div className="lg:h-[5vh] lg:w-full lg:p-2 bg-gray-800 lg:flex lg:justify-between lg:items-center lg:font-serif">
           <div>Contact Via Email</div>
           <div>
-            <a href="ankitdalei123@gmail.com">ankitdalei123@gmail.com</a>
+            <Link href="ankitdalei123@gmail.com">ankitdalei123@gmail.com</Link>
           </div>
           <div>Copyright @ 2025</div>
         </div>

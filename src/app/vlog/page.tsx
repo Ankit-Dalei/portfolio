@@ -1,42 +1,56 @@
 'use client';
-import Link from "next/link";
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
+import vlogData from '../resourceData/vlogData';
 
 const Vlog = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const toggleContent = () => {
-    setExpanded((prev) => !prev);
+  const toggleContent = (id: number) => {
+    setExpandedId(prev => (prev === id ? null : id));
   };
 
+
   return (
-    <>
-      <div className="bg-[#ffffe4] h-auto w-screen flex flex-col justify-between items-center">
-        <div className="p-2 w-screen h-[3vh] flex justify-start items-center mt-4">
-          <Link href='/'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="45" height="30">
-              <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-            </svg>
-          </Link>
-        </div>
-        <div className="h-auto p-2 w-screen flex flex-col justify-between items-center">
-          <div className="h-auto w-[90%] bg-gray-300 mt-5 flex flex-col justify-center p-4 rounded shadow">
-            <div className="h-[20vh] w-[100%] bg-gray-400 mb-4 rounded sm:h-[45vh]"></div>
-            <div className="text-xl font-semibold mb-2">Title</div>
-            <div className={`instrument-serif-regular-italic text-[14px] tracking-[0.2rem] text-black w-[90%] transition-all duration-300 overflow-hidden ${expanded ? 'max-h-[50000vh]' : 'max-h-[500px]'}`}>
-              lorem500
+    <div className="min-h-screen w-full flex flex-col items-center">
+      {/* Back Button */}
+      <div className="w-full p-4">
+        <Link href='/'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30">
+            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.2l106.1-106.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+          </svg>
+        </Link>
+      </div>
+
+      {/* Grid Vlogs */}
+      <div className="w-full px-4 pb-10 grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center">
+        {vlogData.map(({ id, image, title, content }) => (
+          <div key={id} className="w-full max-w-md bg-gray-100 p-4 rounded-lg shadow-md">
+            <div className="relative w-full h-48 sm:h-64 rounded overflow-hidden bg-gray-300">
+              <Image
+                src={image}
+                alt={title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded"
+              />
             </div>
+            <h2 className="text-xl font-bold mt-4 text-black">{title}</h2>
+            <p className={`text-sm mt-2 text-gray-800 transition-all duration-300 overflow-hidden ${expandedId === id ? 'max-h-[1000px]' : 'max-h-[60px]'}`}>
+              {content}
+            </p>
             <button
-              onClick={toggleContent}
-              className="mt-2 text-[14px] italic text-black underline flex justify-start w-[30%]"
+              onClick={() => toggleContent(id)}
+              className="mt-2 text-sm italic text-black underline"
             >
-              {expanded ? 'VIEW LESS--' : 'SEE MORE--'}
+              {expandedId === id ? 'VIEW LESS--' : 'SEE MORE--'}
             </button>
           </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Vlog;
