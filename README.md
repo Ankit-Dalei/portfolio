@@ -30,7 +30,7 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://yourdomain.com/screenshot-home.png" width="80%" />
+  <img src="https://github.com/Ankit-Dalei/portfolio/blob/master/public/Images/image.png?raw=true" width="80%" alt="Portfolio Screenshot"/>
 </p>
 
 <p align="center">
