@@ -29,6 +29,12 @@ const ProjectData = [
     image: "/proimg5.png",
     url: "https://portfolio-nu-bice-89.vercel.app/"
   },
+  {
+    id: 6,
+    name: "ZYNTRA",
+    image: "/proimg5.png",
+    url: "https://zyntra-mu.vercel.app/"
+  },
 ];
 
 export default ProjectData;
