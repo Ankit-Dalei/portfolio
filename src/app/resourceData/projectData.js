@@ -32,7 +32,7 @@ const ProjectData = [
   {
     id: 6,
     name: "ZYNTRA",
-    image: "/proimg5.png",
+    image: "/ZYNTRA.png",
     url: "https://zyntra-mu.vercel.app/"
   },
 ];
