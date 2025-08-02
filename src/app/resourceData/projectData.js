@@ -35,6 +35,24 @@ const ProjectData = [
     image: "/ZYNTRA.png",
     url: "https://zyntra-mu.vercel.app/"
   },
+  {
+    id: 7,
+    name: "ColorPicker",
+    image: "/colorPicker.png",
+    url: "https://color-tau-two.vercel.app/"
+  },
+  {
+    id: 8,
+    name: "StopWatch",
+    image: "/stopWatch.png",
+    url: "https://stop-watch-three-pied.vercel.app/"
+  },
+  {
+    id: 9,
+    name: "SnakeGame",
+    image: "/SnakeGame.png",
+    url: "https://snake-game-two-gules.vercel.app/"
+  }
 ];
 
 export default ProjectData;
